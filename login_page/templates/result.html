@@ -1,0 +1,28 @@
+    <!doctype html>
+    <html>
+      <body>
+
+          <div class="container">
+            <div class="col-12 py-3">
+            Login page using HTML, CSS, Bootstrap, flask and Python
+            </div>
+
+            <link rel="stylesheet" href="/static/style.css">
+            <table class="data-box" border = 1>
+              {% for key, value in result.iteritems() %}
+             
+                <tr>
+                   <th> {{ key }} </th>
+                   <td> {{ value }} </td>
+                </tr>
+                
+             {% endfor %}
+            </table> 
+          </div>
+          <footer>
+            <div class="container">
+              <p>Made by: Dipanshi Srivastava</p>
+            </div>
+          </footer>
+      </body>
+    </html>
